@@ -1,0 +1,91 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.pragyan"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.CALL_PHONE" />
+15-->[:flutter_phone_direct_caller] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-69
+15-->[:flutter_phone_direct_caller] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-66
+16
+17    <uses-feature
+17-->[:flutter_phone_direct_caller] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-13:36
+18        android:name="android.hardware.telephony"
+18-->[:flutter_phone_direct_caller] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-50
+19        android:required="false" />
+19-->[:flutter_phone_direct_caller] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-33
+20
+21    <application
+22        android:name="android.app.Application"
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.6.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher"
+26        android:label="pragyan" >
+27        <activity
+28            android:name="com.example.pragyan.MainActivity"
+29            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+30            android:exported="true"
+31            android:hardwareAccelerated="true"
+32            android:launchMode="singleTop"
+33            android:theme="@style/LaunchTheme"
+34            android:windowSoftInputMode="adjustResize" >
+35
+36            <!--
+37                 Specifies an Android theme to apply to this Activity as soon as
+38                 the Android process has started. This theme is visible to the user
+39                 while the Flutter UI initializes. After that, this theme continues
+40                 to determine the Window background behind the Flutter UI.
+41            -->
+42            <meta-data
+43                android:name="io.flutter.embedding.android.NormalTheme"
+44                android:resource="@style/NormalTheme" />
+45
+46            <intent-filter>
+47                <action android:name="android.intent.action.MAIN" />
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+50            </intent-filter>
+51        </activity>
+52        <!--
+53             Don't delete the meta-data below.
+54             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+55        -->
+56        <meta-data
+57            android:name="flutterEmbedding"
+58            android:value="2" />
+59
+60        <activity
+60-->[:url_launcher_android] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+61            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+61-->[:url_launcher_android] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+62            android:exported="false"
+62-->[:url_launcher_android] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+63            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+63-->[:url_launcher_android] C:\Users\Dell\OneDrive\Desktop\fyp\pragyan\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+64
+65        <uses-library
+65-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+66            android:name="androidx.window.extensions"
+66-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+67            android:required="false" />
+67-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+68        <uses-library
+68-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+69            android:name="androidx.window.sidecar"
+69-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+70            android:required="false" />
+70-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+71    </application>
+72
+73</manifest>
